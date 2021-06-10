@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+*, *::before,*::after{
+  box-sizing: border-box;
+}
+body{
+  background-color: #fff;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  /* background-image: url(".\CEAT-Banner_Desktop.jpeg"); */
+  /* line-height: 1.42857143; */
+  /* font-size: 16px; */
+  display: flex;
+  flex-direction: column;
+}
+.brand_logo{
+  display: flex;
+  justify-content: left;
+}
+
+.nav-grow{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+.reg{
+  display: flex;
+  /* flex-flow: row wrap; */
+  /* justify-content: flex-end; */
+  margin-left: auto;
+}
+
+.register{
+  font-size: 12px;
+  font-family: "Rajdhani";
+  width: 85px;
+  height: 25px;
+  margin-left: 50px;
+  color: #673EB6;
+  background-color: white;
+  clip-path: 
+  polygon(
+    0% 0px,                 /* top left */
+    20px 0%,                 /* top left */
+    calc(100% - 110px) 0%,    /* top right */
+    100% 70px,               /* top right */
+    100% calc(100% + 20px),  /* bottom right */
+    calc(100% - 20px) 100%,  /* bottom right */
+    95px 100%,               /* bottom left */
+    0 calc(100% - 95px)      /* bottom left */
+  );
+  border-width: 1px 1px;
+  border-color: #673EB6;
+  margin-top: 15px;
+}
+.menu{
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.BB{
+ 
+  background-color: #EFF3F6;
+ }
+ 
+
+.desk{
+  display: flex;
+  flex-direction: column;
+  background-color: #EFF3F6;
+  justify-content: center;
+  /* margin-top: 30rem; */
+}
+
+.nic{
+  background-image: url(".\CEAT-Banner_Desktop.jpeg");
+}
+
+.imggrp{
+  display: flex;
+  flex-direction: column;
+  
+  /* margin-top: -25rem; */
+  z-index: 1;
+}
+.game_series{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+#Logo_Desktop{
+  display: flex;
+  width: 20rem; 
+  align-items: center;
+  justify-content: center;
+}
+
+.img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+.game{
+position: relative;
+}
+.plat{
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+}
+.zoink{
+  position: relative;
+  margin-left: 5rem;
+}
+
+.life{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  font-size: 10px;
+  margin-left: 5rem;
+}
+
+.play{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.PlayNow{
+  font-size: 30px;
+  font-family: "Rajdhani";
+  width: 250px;
+  height: 75px;
+  /* margin-left: 50px; */
+  
+  color: white;
+  background-color: #673EB6;
+  clip-path: 
+  polygon(
+    0% 0px,                 /* top left */
+    20px 0%,                 /* top left */
+    calc(100% - 32px) 0%,    /* top right */
+    100% 32px,               /* top right */
+    100% calc(100% + 20px),  /* bottom right */
+    calc(100% - 20px) 100%,  /* bottom right */
+    30px 100%,               /* bottom left */
+    0 calc(100% - 30px)      /* bottom left */
+  );
+  border-width: 1px 1px;
+  border-color: #673EB6;
+  
+  margin-top: 4rem
+} 
+
+
+.Nickb{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 5rem 10rem;
+  overflow: hidden;
+  max-width: 100;
+  justify-content: center;
+  /* align-items: center; */
+  /* background-color: #fff; */
+}
+
+.rect{
+  background-color: #fff;
+    
+    border-radius: 4px;
+    box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
+    padding: 1rem;;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.start{
+  font-family: "Rajdhani";
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-weight: 800;
+  align-items: center;
+  color: #673EB6;
+}
+
+.startsec{
+  display: flex;
+}
+
+.grp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.int{
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  color: #04061B;
+  /* justify-content: space-around; */
+  padding: 0 2.5rem;
+}
+
+.str{
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  color: #673EB6;
+  /* justify-content: space-around; */
+  padding: 0 2rem;
+}

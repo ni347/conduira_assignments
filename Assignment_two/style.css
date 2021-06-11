@@ -84,9 +84,11 @@ body{
 .nic{
   /* display: flex; */
   background-image: url("./assets/CEAT-Banner_Desktop.jpeg");
-  /* background-position: 5px 10px; */
+  background-position: top;
   background-repeat: no-repeat;
-  height: 40rem;
+  height: 30rem;
+  /* width: 120rem; */
+  z-index: 1;
 }
 
 .imggrp{
@@ -94,9 +96,9 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 15rem;
+  /* margin-left: 15rem; */
   /* margin-top: -25rem; */
-  z-index: 2;
+  /* z-index: 2; */
 }
 .game_series{
   display: flex;
@@ -125,7 +127,7 @@ position: relative;
   display: flex;
   justify-content: center;
   font-size: 10px;
-  color: #04061B;
+  color: #fff;
 }
 .zoink{
   position: relative;
@@ -135,7 +137,7 @@ position: relative;
 .life{
   display: flex;
   justify-content: center;
-  color: #04061B;
+  color: #fff;
   /* align-items: center; */
   font-size: 10px;
   margin-left: 5rem;
@@ -146,6 +148,7 @@ position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 .PlayNow{
@@ -154,6 +157,7 @@ position: relative;
   width: 250px;
   height: 75px;
   /* margin-left: 50px; */
+  font-weight: bold;
   
   color: white;
   background-color: #673EB6;
@@ -171,7 +175,8 @@ position: relative;
   border-width: 1px 1px;
   border-color: #673EB6;
   
-  margin-top: 4rem
+  z-index: inherit;
+  margin-top: -2rem;
 } 
 
 

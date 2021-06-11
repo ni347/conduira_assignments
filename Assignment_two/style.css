@@ -22,7 +22,7 @@ body{
   display: flex;
   flex-direction: row;
   width: 100%;
-
+  padding: 7px;
 }
 
 .reg{
@@ -33,13 +33,15 @@ body{
 }
 
 .register{
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
   font-family: "Rajdhani";
   width: 85px;
   height: 25px;
   margin-left: 50px;
   color: #673EB6;
   background-color: white;
+  cursor: pointer;
   clip-path: 
   polygon(
     0% 0px,                 /* top left */
@@ -54,6 +56,11 @@ body{
   border-width: 1px 1px;
   border-color: #673EB6;
   margin-top: 15px;
+}
+
+.register:hover{
+  background-color: #673EB6;
+  color: #fff;
 }
 .menu{
   margin-top: 5px;
@@ -75,15 +82,21 @@ body{
 }
 
 .nic{
-  background-image: url(".\CEAT-Banner_Desktop.jpeg");
+  /* display: flex; */
+  background-image: url("./assets/CEAT-Banner_Desktop.jpeg");
+  /* background-position: 5px 10px; */
+  background-repeat: no-repeat;
+  height: 40rem;
 }
 
 .imggrp{
   display: flex;
   flex-direction: column;
-  
+  justify-content: center;
+  align-items: center;
+  margin-left: 15rem;
   /* margin-top: -25rem; */
-  z-index: 1;
+  z-index: 2;
 }
 .game_series{
   display: flex;
@@ -112,6 +125,7 @@ position: relative;
   display: flex;
   justify-content: center;
   font-size: 10px;
+  color: #04061B;
 }
 .zoink{
   position: relative;
@@ -121,6 +135,7 @@ position: relative;
 .life{
   display: flex;
   justify-content: center;
+  color: #04061B;
   /* align-items: center; */
   font-size: 10px;
   margin-left: 5rem;
@@ -218,4 +233,136 @@ position: relative;
   color: #673EB6;
   /* justify-content: space-around; */
   padding: 0 2rem;
+}
+
+.basic{
+  display: flex;
+  flex-direction: column;
+  background-color:#EFF3F6;
+  text-align: center;
+  min-height: 64vh;
+}
+
+
+.TOURNAMENT{
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Rajdhani";
+}
+
+.GameCardimages{
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.GameCard1{ 
+    margin-bottom: 32px;
+    width:140px;
+    height: 140px;
+    clip-path: 
+    polygon(
+      0% 0px,                 /* top left */
+      20px 0%,                 /* top left */
+      calc(100% - 20px) 0%,    /* top right */
+      100% 25px,               /* top right */
+      100% calc(100% + 20px),  /* bottom right */
+      calc(100% - 20px) 100%,  /* bottom right */
+      20px 100%,               /* bottom left */
+      0 calc(100% - 20px)      /* bottom left */
+    );
+}
+
+.GameCard2{
+    margin-left: 50px; 
+    width:200px;
+    height: 200px;
+    clip-path: 
+    polygon(
+      0% 0px,                 /* top left */
+      20px 0%,                 /* top left */
+      calc(100% - 20px) 0%,    /* top right */
+      100% 25px,               /* top right */
+      100% calc(100% + 20px),  /* bottom right */
+      calc(100% - 20px) 100%,  /* bottom right  #6F25FF; */
+      20px 100%,               /* bottom left */
+      0 calc(100% - 20px)      /* bottom left */
+    );
+}
+
+.Region-div{
+  flex-direction: row;
+  align-items: center;
+  margin-top: 7vh;
+}
+
+.Region-btn{
+  flex-direction: row;
+  flex-grow: 1;
+  padding: 15px;
+  color:white;
+  background-color: #6F25FF;
+  min-height: 70px;
+  min-width: 100px;
+  border-radius: 7px;
+  border: none;
+  font-weight: 700;
+}
+
+ 
+.triangle-right {
+  padding-left: 20px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid white;
+  border-bottom: 5px solid transparent;
+  border-right: none;
+}
+
+.triangle-left {
+  padding-right: 20px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid white;
+  border-bottom: 5px solid transparent;
+}
+
+.Leaderboard_button_gap{
+  margin-top: -6vh;
+  min-height: 14vh;
+  background-color: white;
+}
+
+.Leaderboard_blocks{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#Scoreboardno{
+  margin-top: none;
+  align-items: center;
+}
+
+#Scoreboard_no{
+  width: 80%;
+  text-align: center;
+}
+
+#Scoreboard_gap{
+  margin-top: 2vh;
+}
+
+.Squares{
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  width: 6.5px;
+  height: 6.5px;
+  background: #CDCBD0;
+  margin: 0.3rem;
 }

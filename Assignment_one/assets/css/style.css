@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #16032a;
+  font-family: Rajdhani;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.full-height-grow {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.main-nav {
+  display: flex;
+  background-color: #251942;
+  margin: 0;
+  padding: 0;
+  /* flex-shrink: 0; */
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  /* margin-left: 1rem; */
+  margin: 0.2rem 1rem;
+  cursor: pointer;
+}
+
+.man-img {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.man-images {
+  /* padding: 0rem; */
+  margin: 0.2rem 1rem;
+}
+
+.menu-icon {
+  display: flex;
+  /* margin: 1rem; */
+  margin: 0.2rem 1rem;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.left-parameter {
+  position: fixed;
+  z-index: 2;
+}
+
+.left-sidebar {
+  /* display: flex; */
+  flex-direction: column;
+  /* position: relative; */
+  top: 3.85rem;
+}
+
+.new-age-esport {
+  display: flex;
+  background-color: #251942;
+  min-width: 18.75rem;
+  min-height: 3.75rem;
+}
+
+.arrow-img {
+  display: flex;
+  margin-top: 0.05rem;
+  margin-left: 1rem;
+}
+
+.text-left-sidebar {
+  margin: 0.5rem 0.5rem 0.5rem 1rem;
+  text-align: left;
+}
+
+.new-age-esport-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.create-tour-text {
+  margin: 0;
+  font-size: 14px;
+  color: #ba32ff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.create-share {
+  background-color: #251942;
+  margin-top: 0.2rem;
+  min-width: 18.75rem;
+  min-height: 39.563rem;
+  padding-left: 2.6rem;
+  padding-top: 0.5rem;
+  text-align: left;
+}
+
+.create-share.arrow-right:after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 120px;
+  border-top: 15px solid transparent;
+  border-right: 15px solid #16032a;
+  border-left: none;
+  border-bottom: 15px solid transparent;
+}
+
+.create-share-heading {
+  font-weight: bold;
+  letter-spacing: 0.56px;
+}
+
+.create-share-sub {
+  font-size: 14px;
+  font-weight: medium;
+  letter-spacing: 0.49px;
+  margin: 0;
+}
+
+.create-share-content {
+  color: #7c758d;
+}
+
+.create-share-subcontent {
+  margin-top: -12px;
+}
+
+.share-content {
+  margin-top: 30px;
+}
+
+.right-section {
+  /* display: flex; */
+  flex-direction: column;
+  position: relative;
+  top: 3.85rem;
+  left: 19rem;
+  width: 100%;
+}
+
+.secondary-head {
+  /* display: flex; */
+  text-align: left;
+  letter-spacing: 0.56px;
+}
+
+.secondary-head ul {
+  display: flex;
+  list-style: none;
+  /* position: relative; */
+  width: calc(100% - 18.75rem);
+  padding: initial;
+  margin: initial;
+}
+
+.list-under-bar li {
+  margin: 1rem 1rem 0rem 1rem;
+}
+
+.secondary-head li a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.secondary-head li a:hover {
+  color: #ba32ff;
+}
+
+.list-under-bar li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  margin-top: 5px;
+  height: 5px;
+  background: #ba32ff;
+  transition: width 0.3s;
+}
+
+.list-under-bar li a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.list-under-bar .current::after {
+  width: 100%;
+}
+
+.help-text {
+  margin: 1rem;
+  margin-left: auto;
+}
+
+.help-text a {
+  font-weight: 600;
+  font-size: 15px;
+  color: #ba32ff;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.basics {
+  /* display: flex; */
+  flex-direction: column;
+  position: relative;
+  width: calc(100% - 20.75rem);
+  left: 1rem;
+  top: 1.2rem;
+  /* margin-right: 1rem; */
+}
+
+.basics-heading {
+  font: normal normal bold 16px/16px Rajdhani;
+  letter-spacing: 0.56px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.basics-heading2 {
+  font: normal normal bold 16px/16px Rajdhani;
+  letter-spacing: 0.56px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+.match-details {
+  background-color: #251942;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.selected-tour {
+  padding: 0rem 1rem 0rem 1rem;
+  font: normal normal 600 15px/52px Rajdhani;
+  letter-spacing: 0px;
+  color: #5637a2;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.sky-league-tour {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  padding: 0rem 1rem 0rem 1rem;
+  margin: -1rem 0rem 1rem 0rem;
+}
+
+.input-class {
+  border: 1px solid #5637a2;
+  border-radius: 5px;
+  background-color: transparent;
+  font: normal normal 600 18px Rajdhani;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px;
+  outline-color: #ba32ff;
+  letter-spacing: 0px;
+}
+
+.input-field {
+  display: flex;
+  width: 75%;
+  padding: 0.5rem 1rem 1rem 0.5rem;
+  margin: 0;
+}
+
+.calender-icon {
+  padding: 0.6rem;
+  position: absolute;
+  z-index: 1;
+  transform: translateX(9.5rem);
+}
+
+.input-row {
+  display: flex;
+}
+
+.input-col {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url("../images/fi-rr-calendar.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+  cursor: pointer;
+}
+
+input[type="drop"] {
+  font: normal normal 600 18px Rajdhani;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  /* position: relative; */
+  text-indent: 6%;
+}
+
+input::placeholder {
+  font: normal normal 600 18px/52px Rajdhani;
+  letter-spacing: 0px;
+  color: #5637a2;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.dropbtn {
+  font: normal normal 600 18px Rajdhani;
+  letter-spacing: 0px;
+  color: #ba32ff;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0rem 1rem 0rem 1rem;
+  margin: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 10px;
+}
+
+.input-class-drop {
+  border: 1px solid #5637a2;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 18px;
+  color: white;
+  font-weight: 100;
+  width: 100%;
+  padding: 10px;
+  outline-color: #ba32ff;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 0.5rem 1rem 1rem 0.5rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #251942;
+  width: 95.5%;
+  top: 80%;
+  z-index: 1;
+  border: 1px solid #5637a2;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ba32ff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.delhi-dragons-img {
+  display: flex;
+  flex-direction: row;
+  background: url("../images/Delhi\ Dragons.svg") no-repeat;
+  background-size: 36px;
+  background-position: 0%;
+}
+
+.kolkata-triden-img {
+  display: flex;
+  flex-direction: row;
+  background: url("../images/Kolkata\ tridents.svg") no-repeat;
+  background-size: 36px;
+  background-position: 0%;
+}
+
+.drop-text {
+  font: normal normal normal 18px Rajdhani;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-indent: 6%;
+}
+
+input[type="number"]:invalid .requirements {
+  max-height: 200px;
+  padding: 0 30px 20px 50px;
+}
+
+.requirements {
+  font: normal normal 500 14px Rajdhani;
+  letter-spacing: 0.7px;
+  color: #ff4f61;
+}
+
+.web-btn {
+  display: flex;
+}
+
+.web-btn a:link,
+a:visited {
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #ba32ff;
+  border: 1px solid #ba32ff;
+  width: 8rem;
+  height: 3.125rem;
+  border-radius: 5px;
+  font: normal normal bold 16px Rajdhani;
+  letter-spacing: 0.56px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.web-btn a:hover,
+a:active {
+  background-color: #ab16f5;
+}

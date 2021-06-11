@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Conduira_Assignment-1</title>
+</head>
+
+<body class="container full-height-grow">
+
+  <header class="main-header">
+    <nav class="main-nav">
+      <a href="/" class="brand-logo">
+        <img src="./assets/images/Logo.svg" />
+      </a>
+      <a href="/" class="man-img">
+        <img class="man-images" src="./assets/images/player-img.svg" />
+      </a>
+      <a href="/" class="menu-icon">
+        <img src="./assets/images/menu-icon.svg" />
+      </a>
+    </nav>
+  </header>
+  <section class="main-section">
+    <div class="left-parameter left-sidebar">
+      <div class="new-age-esport">
+        <div class="arrow-img">
+          <img src="assets/images/arrow-left.svg" />
+        </div>
+        <div class="text-left-sidebar">
+          <p class="new-age-esport-text">
+            NEW AGE ESPORTS</p>
+          <p class="create-tour-text">
+            CREATE TOURNAMENT</p>
+        </div>
+      </div>
+      <div class="create-share box arrow-right">
+        <div class="create-content">
+          <p class="create-share-heading">CREATE</p>
+          <div class="create-share-sub">
+            <p>Setup</p>
+            <div class="create-share-content">
+              <p class="create-share-subcontent">Brackets</p>
+              <p class="create-share-subcontent">Streams</p>
+              <p class="create-share-subcontent">Publish</p>
+            </div>
+          </div>
+        </div>
+        <div class="share-content ">
+          <p class="create-share-heading">SHARE</p>
+          <div class="create-share-sub">
+            <div class="create-share-content">
+              <p class="create-share-subcontent">Invite Players</p>
+              <p class="create-share-subcontent">Embed Codes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <div class="secondary-head">
+        <ul class="list-under-bar">
+          <li><a href="./index.html" class="left-head current">BASICS</a></li>
+          <li><a href="./mappicks.html" class="left-head">MAP PICKS</a></li>
+          <li><a href="./homestats.html" class="left-head">HOME TEAM STATS</a></li>
+          <li><a href="./gueststats.html" class="left-head">GUEST TEAM STATS</a></li>
+
+          <div class="help-text">
+            <a href="#">Help</a>
+          </div>
+        </ul>
+      </div>
+
+      <div class="basics">
+        <div class="match-details">
+          <p class="basics-heading">MATCH DETAILS</p>
+          <p class="selected-tour">SELECTED TOURNAMENT</p>
+          <p class="sky-league-tour">SKY LEAGUE TOURNAMENT</p>
+          <div class="input-row">
+            <div class="input-field">
+              <input type="date" class="input-class" name="date" />
+            </div>
+
+            <div class="input-field">
+              <input type="text" name="match-type" class="input-class" placeholder="match type">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="match-details">
+          <p class="basics-heading2">TEAMS AND SCORE</p>
+          <div class="input-row">
+            <div class="dropdown">
+              <input type="drop" class="input-class-drop delhi-dragons-img" name="date" value="DELHI DRAGON" />
+              <button class="dropbtn">Home team</button>
+              <div class="dropdown-content">
+                <a href="#" class="drop-text delhi-dragons-img">DELHI DRAGON</a>
+                <a href="#" class="drop-text kolkata-triden-img">kolkata tridents</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <input type="drop" class="input-class-drop" name="drop" placeholder="select items"
+                style="text-indent: 0%" />
+              <button class="dropbtn">Guest team</button>
+              <div class="dropdown-content">
+                <a href="#" class="drop-text delhi-dragons-img">DELHI DRAGON</a>
+                <a href="#" class="drop-text kolkata-triden-img">kolkata tridents</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div class="input-field" style="flex-direction: column;">
+              <input type="text" class="input-class" name="" placeholder="type home team score" />
+            </div>
+            <div class="input-field" style="flex-direction:column">
+              <input type="number" id="number" name="number" class="input-class" required value="5"
+                pattern="[1-3]{1}" />
+              <div class="requirements">
+                The input should be the number from 1 to 3
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="match-details">
+          <p class="basics-heading2">COMMUNITY PREDICTIONS</p>
+          <div class="input-row">
+            <div class="dropdown">
+              <input type="text" class="input-class" name="poll-percentage" placeholder="TYPE POLL PERCENTAGE" />
+              <button class="dropbtn">Result: 1 - 2</button>
+            </div>
+            <div class="dropdown">
+              <input type="text" class="input-class" name="poll-percentage" value="35%" />
+              <button class="dropbtn">Result: 2 - 1</button>
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div class="dropdown">
+              <input type="text" class="input-class" name="poll-percentage" value="20%" />
+              <button class="dropbtn">Result: 3 - 0</button>
+            </div>
+            <div class="dropdown">
+              <input type="text" class="input-class" name="poll-percentage" placeholder="TYPE THE POLL PERCENTAGE" />
+              <button class="dropbtn">Result: 3 - 0</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="match-details" style="background-color: transparent; width: calc(100% - 18.75rem)">
+        <div class="web-btn" style="margin-left: auto;">
+          <a href="./mappicks.html" style="margin-left: auto;">next</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
